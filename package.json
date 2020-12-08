@@ -1,0 +1,35 @@
+{
+  "name": "zu",
+  "private": "true",
+  "version": "0.0.1",
+  "description": "Canvas library with a fluent API",
+  "license": "MIT",
+  "author": "Mathias Rasmussen <mathiasvr@gmail.com>",
+  "main": "main.js",
+  "scripts": {
+    "test": "standard && npm run type-check",
+    "type-check": "tsc --allowJs --checkJs --strict --target esnext --noEmit *.js",
+    "gen-types": "tsc --allowJs --checkJs --strict --target esnext -d --emitDeclarationOnly main.js",
+    "minify": "terser --compress --mangle --module --source-map -o zu.min.js main.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "terser": "^5.5.1",
+    "typescript": "^4.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mathiasvr/zu.git"
+  },
+  "keywords": [
+    "html5",
+    "canvas",
+    "fluent",
+    "api"
+  ],
+  "bugs": {
+    "url": "https://github.com/mathiasvr/zu/issues"
+  },
+  "homepage": "https://github.com/mathiasvr/zu#readme"
+}
